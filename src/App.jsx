@@ -18,7 +18,7 @@ import NotFound from './pages/NotFound'
 import { useUser } from './context/UserContext'
 
 const AppRoutes = () => {
-  const { token } = useUser();  // <<<<<<<<<<<< Aquí sí puedes usar useUser()
+  const { token } = useUser();  
 
   return (
     <Routes>
@@ -42,7 +42,7 @@ const App = () => {
         <UserProvider>
           <BrowserRouter>
             <Navbar />
-            <AppRoutes /> {/* ahora rutas separadas */}
+            <AppRoutes />
             <Footer />
           </BrowserRouter>
         </UserProvider>
